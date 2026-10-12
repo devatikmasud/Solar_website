@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17472c">
+<title>Contact Us | SolarShop</title>
+<link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+
+<div class="sticky-wrapper">
+    <div class="topbar">
+        <div class="container">
+            <span><b>✉</b> hello@solarshop.com</span>
+            <span><b>☎</b> +1 (248) 248-2481</span>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo" href="index.html"><img src="assets/solarshop-logo.png" alt="SolarShop"></a>
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+                <div class="navlinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html" class="btn" style="padding:8px 16px;">Contact Us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<section class="contact-page">
+    <div class="container contact-grid">
+        <div>
+            <p class="eyebrow">Get In Touch</p>
+            <h1>Ready to explore a brighter energy future?</h1>
+            <p>Tell us about your property and goals. Our solar experts are ready to guide you toward clean and renewable energy savings.</p>
+            <div class="contact-details">
+                <div class="contact-detail"><b>✉</b><span><strong>Email Us</strong><br>hello@solarshop.com</span></div>
+                <div class="contact-detail"><b>☎</b><span><strong>Call Us</strong><br>+1 (248) 248-2481</span></div>
+                <div class="contact-detail"><b>⌂</b><span><strong>Location</strong><br>SolarShop Headquarters, Clean Energy Ave</span></div>
+            </div>
+        </div>
+
+        <form class="form-card" id="contactForm" action="assets/php/process-contact.php" method="POST">
+            <h3>Solar Consultation</h3>
+            <p>Fill out the form below and let's power your space with sunshine.</p>
+            <div class="form-grid">
+                <div class="field"><label>Full Name *</label><input type="text" name="name" required placeholder="Enter your name"></div>
+                <div class="field"><label>Email Address *</label><input type="email" name="email" required placeholder="you@example.com"></div>
+                <div class="field"><label>Phone Number</label><input type="tel" name="phone" placeholder="Your phone number"></div>
+                <div class="field"><label>Solution Type</label><select name="type"><option>Residential Solar</option><option>Commercial Solar</option><option>Battery Storage</option></select></div>
+                <div class="field full"><label>Project Details *</label><textarea name="message" required placeholder="Tell us about your roof or energy goals..."></textarea></div>
+            </div>
+            <button class="btn" type="submit">Send Message ☀️</button>
+            <div class="form-success" id="formSuccess">Thank you, your message is successfully sent!</div>
+        </form>
+    </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
